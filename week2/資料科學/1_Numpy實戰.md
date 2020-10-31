@@ -191,7 +191,7 @@ ravel()
 T
 newaxis
 ```
-### reshape
+### reshape調整矩陣
 ```
 import numpy as np
 x = np.arange(2,10).reshape(2,4)
@@ -203,7 +203,7 @@ y = np.arange(2,10).reshape(4,2)
 y
 ```
 
-### ravel
+### ravel鏟平變一維陣列
 ```
 import numpy as np
 ar=np.array([np.arange(1,6),np.arange(10,15)]); 
@@ -214,13 +214,13 @@ import numpy as np
 ar=np.array([np.arange(1,6),np.arange(10,15)])
 ar.ravel()
 ```
-### T
+### T 矩陣轉置
 ```
 import numpy as np
 ar=np.array([np.arange(1,6),np.arange(10,15)])
 ar.T
 ```
-### newaxis
+### newaxis加軸
 ```
 import numpy as np
 ar=ar[:, np.newaxis]; ar.shape
@@ -372,7 +372,7 @@ sqrt
 exp
 
 ```
-### sqrt
+### sqrt平方根
 ```
 import numpy as np
 arr = np.arange(10)
@@ -389,10 +389,7 @@ np.exp(arr)
 ## [5]多Numpy ndarray的各種運算(A矩陣與B矩陣間的運算)
 ### 加法運算
 ```
-import numpy as np
-arr = np.array([[1., 2., 3.], [4., 5., 6.]])
-# arr
-arr+arr
+
 ```
 ### 乘法運算
 ```
@@ -457,6 +454,7 @@ result
    https://codertw.com/程式語言/462108/
 [2]NumPy 廣播(Broadcast)
    https://www.runoob.com/numpy/numpy-broadcast.html[2]
+[3]https://jakevdp.github.io/PythonDataScienceHandbook/figures/02.05-broadcasting.png   
 ```
 ```
 import numpy as np
